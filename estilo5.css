@@ -1,0 +1,180 @@
+html{
+    scroll-behavior: smooth;
+    transition: .8s;
+}
+body{
+    margin:0;
+    background-color: tan;
+    
+}
+
+/* Cabeçalho */
+.logo{
+    width: 65px;
+    height: 65px;
+}
+#cabecalho{
+    background-color: rgba(137, 43, 226, 0.712);
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    z-index: 1;
+    top:0px;
+    
+    
+}
+
+ul{
+    list-style: none;
+    margin:0;
+}
+nav{
+    float: right;
+    margin:0;
+}
+li{
+    float: left;
+    padding: 20px 20px;
+}
+li:hover{
+    background-color: teal;
+    transition: .8s;
+
+}
+li a{
+    text-decoration: none;
+    color: wheat;
+    font-weight: bold;
+    font-size: 20px;
+}
+#capa{
+    background: url(img/canetas-e-lapis-coloridos.jpg);
+    height: 550px;
+    text-align: center;
+    background-size: 100% 100%;
+    margin-bottom: 15px;
+    margin-top:65px;
+    
+      
+    
+}
+h3{
+    text-align:center ;
+}
+h1{
+    
+    padding-top: 200px;
+    font-size: 60px;
+    color: teal;
+    font-family:cursive;
+    margin-bottom: 20px;
+    text-shadow: violet 2px 5px;
+    letter-spacing: 10px;
+}
+h2{
+    border-top: rgba(9, 77, 9, 0.781) double 5px;
+    margin:0 400px 30px;
+    color: rgb(144, 51, 98);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2;
+}
+#capa a{
+    text-decoration: none;
+    border: palevioletred solid 3px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: rgba(9, 77, 9, 0.781);
+    font-weight: bold;
+    
+}
+#capa a:hover{
+    background-color: rgba(9, 77, 9, 0.781);
+    color: violet;
+    border: rgba(9, 77, 9, 0.781) solid 3px;
+    transition: .5s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+p{
+    line-height: 2;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+}
+#intro,#metas,#ajuda:hover{
+    margin:2% 10%;
+    padding: 2% 5%;
+    box-shadow: 0px 0px 5px 5px slategrey;
+    background-color: white;
+    border-radius: 15px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+/* Layout - float */
+.coluna{
+    float:left;    
+}
+.duas{
+    width: 48%;
+}
+.tres{
+    width: 33%;
+}
+.quatro{
+    width: 24%;
+    text-align: center;
+}
+.tres img{
+    width: 100%;
+    height: 40%;
+}
+iframe{
+    width: 100%;
+}
+footer{
+    clear: both;
+    background-color: teal;
+    display: flex;
+    padding-left: 40%;
+}
+@media screen and (max-width:800px){
+    
+    nav{
+        padding: 0;
+        margin:0;
+        visibility: hidden;
+    }
+    li, ul{
+        padding: 0;
+        margin:0;
+    }
+    
+    h1{
+        margin:0;
+        padding-top:40%;
+        font-size:10vw;
+    }
+    h2{
+        margin:2% 5% ; 
+        font-size:5vw;   
+    }
+    
+    .coluna{
+        float:none;
+        display: block;
+        width:100%;
+        box-sizing: border-box;
+    }
+    .duas, .tres, .quatro{
+        width: 90%;
+        padding: 0 2%;
+        box-sizing: border-box;
+    }  
+   
+    #intro,#metas,#ajuda:hover{
+        margin:0;
+    }
+    
+    
+}
